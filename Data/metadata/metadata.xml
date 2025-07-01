@@ -1,0 +1,354 @@
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Minnesota Department of Natural Resources (MNDNR) - Division of Ecological and Water Resources, Dam Safety Unit</origin>
+        <pubdate>20141023</pubdate>
+        <title>Inventory of Dams in Minnesota</title>
+        <pubinfo>
+          <publish>Minnesota Department of Natural Resources (DNR)</publish>
+        </pubinfo>
+        <onlink>http://gisdata.mn.gov/dataset/struc-mn-dams-inventory-pub</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>The data set includes information on dam locations in Minnesota and associated permits.</abstract>
+      <purpose>The National Dam Inspection Act of 1972 (P.L. 92-367) authorized the United States Corps of Engineers to inventory dams located in the United States.  The MNDNR received funding to inventory the dams in Minnesota. The MNDNR currently maintains the inventory of dams in Minnesota.</purpose>
+      <supplinf>
+        </supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20250626</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>Time Period of Content date indicates the date which the user can be confident of accuracy and completeness of the dataset.</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>Continually</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-97.23</westbc>
+        <eastbc>-89.53</eastbc>
+        <northbc>49.37</northbc>
+        <southbc>43.5</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekey>dam, dams</themekey>
+        <themekt>
+          </themekt>
+      </theme>
+      <place>
+        <placekey>Minnesota</placekey>
+      </place>
+    </keywords>
+    <accconst>None</accconst>
+    <useconst>Use of the data are constrained only by the MNDNR GIS Data License Agreement. See the Distribution Liability section below for a link.</useconst>
+    <native>ArcView Shapefile</native>
+    <browse>
+      <browsen>https://resources.gisdata.mn.gov/pub/gdrs/data/pub/us_mn_state_dnr/struc_mn_dams_inventory_pub/metadata/preview.jpg</browsen>
+    </browse>
+    <crossref>
+      <citeinfo>
+        <title>&lt;a href="../../../../pub/us_mn_state_mngeo/loc_geographic_names_usgs_gnis/metadata/metadata.html" target=_blank&gt;Dams (from Geographic Names Info System - GNIS)&lt;/a&gt;</title>
+      </citeinfo>
+    </crossref>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntorg>Minnesota Department of Natural Resources</cntorg>
+          <cntper>Jason Boyle</cntper>
+        </cntperp>
+        <cntpos>State Dam Safety Engineer</cntpos>
+        <cntaddr>
+          <addrtype>Mailing and Physical</addrtype>
+          <address>500 Lafayette Rd</address>
+          <city>Saint Paul</city>
+          <state>MN</state>
+          <postal>55155</postal>
+        </cntaddr>
+        <cntvoice>651-259-5715</cntvoice>
+        <cntemail>jason.boyle@state.mn.us</cntemail>
+      </cntinfo>
+    </ptcontac>
+  </idinfo>
+  <dataqual>
+    <logic>
+      </logic>
+    <complete>This inventory has a complete record of all "significant" dams. This includes any dams that require regulatory attention by meeting sufficient size or hazard class rating requirements, or dams that were evaluated but did not meet size or hazard conditions. It also includes all dams managed by the DNR's Division of Ecological and Water Resources.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>Accuracy generally within 10 meters.  Dam locations either determined in the field using hand held GPS or from air photo maps.</horizpar>
+      </horizpa>
+      <vertacc>
+        <vertaccr>
+          </vertaccr>
+      </vertacc>
+    </posacc>
+    <lineage>
+      <procstep>
+        <procdesc>
+          </procdesc>
+      </procstep>
+    </lineage>
+    <attracc>
+      <attraccr>Values taken from permit applications, engineering reports, field inspections, surveys, USGS 15 minute quadrangle maps, and LiDAR data.</attraccr>
+    </attracc>
+  </dataqual>
+  <spdoinfo>
+    <indspref>well locations</indspref>
+    <direct>point</direct>
+    <mgmg3obj>point</mgmg3obj>
+    <mgmg3til>state</mgmg3til>
+  </spdoinfo>
+  <spref>
+    <vertdef>
+      <altsys>
+        <altdatum>not applicable</altdatum>
+        <altunits>Not Applicable</altunits>
+      </altsys>
+      <depthsys>
+        <depthdn>not applicable</depthdn>
+        <depthdu>Not Applicable</depthdu>
+      </depthsys>
+    </vertdef>
+    <horizsys>
+      <planar>
+        <gridsys>
+          <gridsysn>Universal Transverse Mercator</gridsysn>
+          <utm>
+            <utmzone>15</utmzone>
+          </utm>
+        </gridsys>
+        <planci>
+          <plandu>meters</plandu>
+        </planci>
+      </planar>
+      <geodetic>
+        <horizdn>NAD83</horizdn>
+        <ellips>GRS80</ellips>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>dam_locations</enttypl>
+        <enttypd>a point feature class of inventoried dams</enttypd>
+      </enttyp>
+      <attr>
+        <attrlabl>dam_name</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>nid_id</attrlabl>
+        <attrdef>unique dam identifier used to link dams to permits</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>county</attrlabl>
+        <attrdef>text name of the county</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>status_of_dam</attrlabl>
+        <attrdef>Indicates whether the dam is regulated</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>owner</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>owner_type</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>year_completed</attrlabl>
+        <attrdef>The year damn construction was completed</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>present_purpose</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>top_dam_hgt</attrlabl>
+        <attrdef>Top Dam Height</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>max_store</attrlabl>
+        <attrdef>Maximum storage capacity, in acre-feet</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>norm_store</attrlabl>
+        <attrdef>Normal storage volume, in acre-feet</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>top_dam_elev</attrlabl>
+        <attrdef>Elevation of the top of the dam</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>prin_spill_elev</attrlabl>
+        <attrdef>Elevation of the principal spillway</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>datum_elev</attrlabl>
+        <attrdef>Vertical Datum of the elevation measurements</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>prin_spill_hgt</attrlabl>
+        <attrdef>Principal Spillway Height</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>drainage_area</attrlabl>
+        <attrdef>Drainage Area in square miles</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>Comments</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>hazard</attrlabl>
+        <attrdef>Hazard Rating</attrdef>
+        <attrdomv>
+          <edom>
+            <edomv>H</edomv>
+            <edomvd>High</edomvd>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>S</edomv>
+            <edomvd>Significant</edomvd>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>L</edomv>
+            <edomvd>Low</edomvd>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>sect_town</attrlabl>
+        <attrdef>PLS coordinates</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>utmx</attrlabl>
+        <attrdef>UTM Z15N Easting</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>utmy</attrlabl>
+        <attrdef>UTM Z15N Northing</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>river</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>year_mod</attrlabl>
+        <attrdef>The last year the damn was modified since the completion date</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>permit</attrlabl>
+      </attr>
+      <attr>
+        <attrlabl>rec_dwg_recd</attrlabl>
+        <attrdef>Record drawings from engineer</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>o_m_plan</attrlabl>
+        <attrdef>Operations and Maintanence Plan</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>last_insp_date</attrlabl>
+        <attrdef>Last Inspection Date</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>insp_freq</attrlabl>
+        <attrdef>Inspection Frequency</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>next_insp_year</attrlabl>
+        <attrdef>Next Inspection Year</attrdef>
+      </attr>
+      <attr>
+        <attrlabl>condition_assessment</attrlabl>
+        <attrdomv>
+          <edom>
+            <edomv>Satisfactory</edomv>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Fair</edomv>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Poor</edomv>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>Not Rated</edomv>
+          </edom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <resdesc>struc_mn_dams_inventory_pub</resdesc>
+    <distliab>The Minnesota Department of Natural Resources General Geographic Data License Agreement is online: http://www.dnr.state.mn.us/sitetools/data_software_license.html</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>ArcView Shapefile</formname>
+          <formvern>Not Applicable</formvern>
+          <transize>1024</transize>
+        </digtinfo>
+      </digform>
+      <ordering>Please visit the download page for this dataset on the Minnesota Geospatial Commons website using the web link below (Online Linkage).</ordering>
+    </stdorder>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntorg>Minnesota Department of Natural Resources</cntorg>
+          <cntper>Zeb Thomas</cntper>
+        </cntperp>
+        <cntpos>GIS Data Systems Coordinator</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>500 Lafayette Rd</address>
+          <city>Saint Paul</city>
+          <state>MN</state>
+          <postal>55155</postal>
+        </cntaddr>
+        <cntvoice>651-259-5637</cntvoice>
+        <cntemail>zeb.thomas@state.mn.us</cntemail>
+      </cntinfo>
+    </distrib>
+  </distinfo>
+  <metainfo>
+    <metd>20210709</metd>
+    <metstdn>Minnesota Geographic Metadata Guidelines</metstdn>
+    <metstdv>1.2</metstdv>
+    <metextns>
+      <onlink>http://www.mngeo.state.mn.us/committee/standards/mgmg/metadata.htm</onlink>
+    </metextns>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntorg>Minnesota DNR - Ecological and Water Resources</cntorg>
+          <cntper>Rachel Lindgren</cntper>
+        </cntperp>
+        <cntpos>Hydrologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>500 Lafayette Rd</address>
+          <city>Saint Paul</city>
+          <state>MN</state>
+          <postal>55155</postal>
+        </cntaddr>
+        <cntvoice>651-259-5665</cntvoice>
+        <cntemail>rachel.lindgren@state.mn.us</cntemail>
+      </cntinfo>
+    </metc>
+  </metainfo>
+</metadata>
